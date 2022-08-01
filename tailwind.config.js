@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        '3.5/5': '61.7%',
+      }
     },
   },
   plugins: [],

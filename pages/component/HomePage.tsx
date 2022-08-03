@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import createMap from "./tableGenerator"
 var _ = require('lodash/array');
 const HomePage: NextPage = () => {
- 
+ const [stat ,SetStat]=useState<boolean>(false)
+
+
 const Smap1:any=createMap(8,2)
 const Smap2:any=createMap(7,2)
 const Fmap:any=createMap(11,5)
@@ -88,7 +91,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
 
     </div>
     <div className=' w-47R overflow-hidden bg-red-500 ml-4T'>
-    <div className='w-45R flex  bg-red-100 flex-wrap   mt-8 hover:-translate-x-48 ' >
+    <div className={`${stat?"-translate-x-48 ":""}  w-45R flex  bg-red-100 flex-wrap   mt-8 `} >
    {Dblock?.map((v:any,i:any)=>{ 
       const period:any=[1,2,11,19,37,55,87]
       return(
@@ -100,7 +103,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
     </div>
    </div>
    
-   <button className='inline-block w-12 h-1H bg-green-400 relative ml-4T bottom-4t '> </button>
+   <button className='inline-block w-12 h-1H bg-green-400 relative ml-4T bottom-4t 'onClick={()=>stat?SetStat(false):SetStat(true)}> </button>
 
    </div>
   )

@@ -87,8 +87,8 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
    </div>
 
     </div>
-    <div className=' w-45R overflow:hidden '>
-    <div className='w-full flex  bg-red-100 flex-wrap  ml-49 mt-8 hover:-translate-x-48 ' >
+    <div className=' w-47R overflow-hidden bg-red-500 ml-4T'>
+    <div className='w-45R flex  bg-red-100 flex-wrap   mt-8 hover:-translate-x-48 ' >
    {Dblock?.map((v:any,i:any)=>{ 
       const period:any=[1,2,11,19,37,55,87]
       return(
@@ -99,7 +99,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
     })}
     </div>
    </div>
-
+   
    <button className='inline-block w-12 h-1H bg-green-400 relative ml-4T bottom-4t '> </button>
 
    </div>

@@ -12,6 +12,7 @@ module.exports = {
         '18R':"16.25rem",
         '45R':"49rem",
         'TL':"58.25rem",
+        '47R':"60rem",
       },
       height: {
         '1H': '17rem',

@@ -12,7 +12,8 @@ module.exports = {
         '18R':"16.25rem",
         '45R':"49rem",
         'TL':"58.25rem",
-        '47R':"60rem",
+        '47R':"52rem",
+        '47R2':"49rem",
       },
       height: {
         '1H': '17rem',
@@ -20,11 +21,21 @@ module.exports = {
       margin: {
         '49':"12.75rem",
         '4T':"9.75rem",
+        '4T2':"36.5rem",
+        '4M':"49rem",
               }
     },
     inset:{
-      "4t":"17rem"
+      "4t":"17rem",
+     
     },
+    translate: {
+      "T4":"49rem",
+      "T15":"15rem",
+    },
+    transitionProperty: {
+      'spacing': 'margin, padding, translate',   
+    }
     
   },
   plugins: [],

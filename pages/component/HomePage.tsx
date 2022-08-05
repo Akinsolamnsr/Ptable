@@ -56,7 +56,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
     })}
     </div>
 
-      <div className='flex bg-gray-300 text-sm w-30R h-1/2 flex-wrap'>
+      <div className={`${stat?" transition duration-500 translate-x-[49rem]":"transition duration-500"} flex bg-gray-300 text-sm w-30R h-1/2 flex-wrap`}>
       {Fblock?.map((v:any,i:any)=>{ 
       const period:any=[4,12,20,38,56,88]
       return(
@@ -67,7 +67,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
     })}
       </div>
 
-      <div className='flex bg-green-300 text-sm w-18R h-1/2 flex-wrap'>
+      <div className={`${stat?" transition duration-500 translate-x-[49rem]":"transition duration-500"} flex bg-green-300 text-sm w-18R h-1/2 flex-wrap`}>
       {Pblock?.map((v:any,i:any)=>{ 
       const period:any=[4,12,20,38,56,88]
       return(
@@ -78,7 +78,7 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
     })}
       </div>
 
-      <div className='flex w-12 bg-red-300 flex-wrap '>
+      <div className={`${stat?" transition duration-500 translate-x-[49rem]":"transition duration-500"} flex w-12 bg-red-300 flex-wrap relative   `}>
    {Sblock1?.map((v:any,i:any)=>{ 
       const period:any=[1,2,11,19,37,55,87]
       return(
@@ -86,12 +86,12 @@ const Dblock=FlatArr5.filter((x:any)=>x!==undefined)
             x:{period[i]} y:1
         </div>
       )
-    })}
+    })}   
    </div>
 
     </div>
-    <div className=' w-47R overflow-hidden bg-red-500 ml-4T'>
-    <div className={`${stat?"-translate-x-48 ":""}  w-45R flex  bg-red-100 flex-wrap   mt-8 `} >
+    <div className=' w-47R overflow-hidden bg-red-500 ml-4T  '>
+    <div className={`${stat?" mx-12 transition-spacing duration-500 -mx-[49rem] scale-50 ":""} transition-spacing duration-500 mx-12 w-45R flex  bg-red-100 flex-wrap  mt-8 `} >
    {Dblock?.map((v:any,i:any)=>{ 
       const period:any=[1,2,11,19,37,55,87]
       return(

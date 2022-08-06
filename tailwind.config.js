@@ -22,11 +22,12 @@ module.exports = {
         '49':"12.75rem",
         '4T':"9.75rem",
         '4T2':"36.5rem",
+        '4T3':"9.5rem",
         '4M':"49rem",
               }
     },
     inset:{
-      "4t":"17rem",
+      "4t":"0.25rem",
      
     },
     translate: {

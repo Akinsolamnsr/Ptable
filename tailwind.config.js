@@ -27,7 +27,7 @@ module.exports = {
               }
     },
     inset:{
-      "4t":"0.25rem",
+      "4t":"0.75rem",
      
     },
     translate: {
@@ -35,7 +35,12 @@ module.exports = {
       "T15":"15rem",
     },
     transitionProperty: {
-      'spacing': 'margin, padding, translate',   
+      'spacing': 'margin, padding,',   
+      'scale':'scale',
+      'opacity':'opacity'
+    },
+    rotate: {
+      '90': '90deg',
     }
     
   },
